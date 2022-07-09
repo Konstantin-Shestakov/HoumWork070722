@@ -67,7 +67,7 @@ Console.Write(" ->  " +N);
 // int start = Convert.ToInt32(Console.ReadLine());
 // Console.Write("Введите число которым заканчиваются элементы массива [B]: ");
 // int end = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите количество случайных элементов массива [A,B]: ");
+// Console.Write("Введите количество случайных элементов массива [A,.....,B]: ");
 // int num = Convert.ToInt32(Console.ReadLine());
 // int[] myArray = CreateRandomArray(num, start, end);
 //  ShowArray(myArray);
@@ -88,47 +88,47 @@ Console.Write(" ->  " +N);
 //Найдите разницу между максимальным и минимальным элементов массива.
 //[3 7 22 2 78] -> 76
 
-int[] CreateRandomArray(int size, int min, int max)
-{
+// int[] CreateRandomArray(int size, int min, int max)
+// {
     
-    int[] array = new int[size];
-    for (int i = 0; i < size; i++)
-    {
-        array[i] = new Random().Next(min, max + 1);
-    }
-    return array;
-}
-void ShowArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
+//     int[] array = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(min, max + 1);
+//     }
+//     return array;
+// }
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
     
-}
+// }
 
-Console.Write("Введите число с которого начинаются элементы массива [A]: ");
-int start = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите число которым заканчиваются элементы массива [B]: ");
-int end = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите количество случайных элементов массива [A,B]: ");
-int num = Convert.ToInt32(Console.ReadLine());
-int[] myArray = CreateRandomArray(num, start, end);
- ShowArray(myArray);
-int MinNumber = myArray[0];
-int MaxNumber = myArray[0];
-    for (int i = 0; i < myArray.Length; i++)
-{
+// Console.Write("Введите число с которого начинаются элементы массива [A]: ");
+// int start = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число которым заканчиваются элементы массива [B]: ");
+// int end = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите количество случайных элементов массива [A,B]: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// int[] myArray = CreateRandomArray(num, start, end);
+//  ShowArray(myArray);
+// int MinNumber = myArray[0];
+// int MaxNumber = myArray[0];
+//     for (int i = 0; i < myArray.Length; i++)
+// {
     
-    if (myArray [i] <= MinNumber)
-    {
-        MinNumber = myArray[i];
+//     if (myArray [i] <= MinNumber)
+//     {
+//         MinNumber = myArray[i];
       
-    }
-       if (myArray[i] >= MaxNumber)
-    {
-        MaxNumber = myArray [i];
-    }
-}
-Console.Write($" ->  {MaxNumber}-{MinNumber} = {MaxNumber - MinNumber} разница между max и min значениями элемнтов массива");
+//     }
+//        if (myArray[i] >= MaxNumber)
+//     {
+//         MaxNumber = myArray [i];
+//     }
+// }
+// Console.Write($" ->  {MaxNumber}-{MinNumber} = {MaxNumber - MinNumber} разница между max и min значениями элемнтов массива");
 
